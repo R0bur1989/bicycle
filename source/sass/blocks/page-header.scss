@@ -1,0 +1,44 @@
+.page-header {
+  position: relative;
+  color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 825px;
+    top: 0;
+    background-image: url("../../img/mainBike-desktop.jpg");
+    background-repeat: no-repeat;
+    z-index: -100;
+    background-color: #131314;
+    background-position: center 0;
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../../img/mainBike-tablet.jpg");
+      height: 340px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 134px;
+  }
+}
+
+.page-header__toggle {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: $primary-color;
+    cursor: pointer;
+  }
+}
