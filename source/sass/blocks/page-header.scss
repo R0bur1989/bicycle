@@ -18,10 +18,19 @@
       background-image: url("../../img/mainBike-tablet.jpg");
       height: 340px;
     }
+
+    @media (max-width: $mobile-width) {
+      background-image: url("../../img/mainBike-mobile.jpg");
+      height: 390px;
+    }
   }
 
   @media (max-width: $tablet-width) {
     padding-top: 134px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 120px;
   }
 }
 
