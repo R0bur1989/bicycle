@@ -1,0 +1,43 @@
+.contacts {
+  width: 555px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    width: auto;
+  }
+}
+
+.contacts p {
+  margin: 0;
+  display: flex;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    max-width: 275px;
+    margin: 0 auto 22px auto;
+  }
+}
+
+.contacts a {
+  font-size: 16px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.contacts__email {
+  line-height: 1.375;
+  margin-left: 15px;
+}
+
+.contacts__phone {
+  line-height: 2;
+  margin-left: 20px;
+}
+
+.contacts__icon {
+  fill: transparent;
+}

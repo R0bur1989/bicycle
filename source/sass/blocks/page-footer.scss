@@ -1,0 +1,11 @@
+.page-footer {
+  padding-bottom: 95px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 52px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 14px;
+  }
+}
