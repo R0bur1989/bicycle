@@ -1,6 +1,7 @@
 .page-header {
   position: relative;
   color: #ffffff;
+  margin-bottom: 380px;
 
   &::before {
     content: "";
@@ -27,10 +28,12 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 134px;
+    margin-bottom: 70px;
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 120px;
+    margin-bottom: 71px;
   }
 }
 

@@ -16,7 +16,6 @@
   display: flex;
 
   @media (max-width: $mobile-width) {
-    display: block;
     max-width: 275px;
     margin: 0 auto 22px auto;
   }
@@ -28,12 +27,20 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
-.contacts__email {
+.contacts__phone {
+  @media (max-width: $mobile-width) {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.contacts__email a {
   line-height: 1.375;
   margin-left: 15px;
 }
 
-.contacts__phone {
+.contacts__phone a {
   line-height: 2;
   margin-left: 20px;
 }
