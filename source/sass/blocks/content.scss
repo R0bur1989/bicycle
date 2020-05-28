@@ -34,7 +34,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   width: 80%;
-  min-height: 651px;
+  min-height: 681px;
   margin: 0 auto;
 
   @media (max-width: $mobile-width) {
@@ -47,85 +47,84 @@
 
 .content__item {
   margin-bottom: 50px;
-  position: relative;
 
   @media (max-width: $mobile-width) {
     margin-bottom: 40px;
   }
 
-  &--road {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 180px;
-      height: 180px;
-      top: 156px;
-      left: -60px;
-      background-image: url("../../img/Ellipse 1.svg");
+  // &--road {
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     width: 180px;
+  //     height: 180px;
+  //     top: 156px;
+  //     left: -60px;
+  //     background-image: url("../../img/Ellipse 1.svg");
 
-      @media (max-width: $tablet-width) {
-        width: 127px;
-        height: 127px;
-        top: 201px;
-      }
-    }
-  }
+  //     @media (max-width: $tablet-width) {
+  //       width: 127px;
+  //       height: 127px;
+  //       top: 201px;
+  //     }
+  //   }
+  // }
 
   &--mountain {
     align-self: flex-end;
 
-    &::before {
-      content: "";
-      position: absolute;
-      width: 37px;
-      height: 37px;
-      top: -13px;
-      left: -14px;
-      background-image: url("../../img/Rectangle 4.svg");
-      z-index: 1;
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   width: 37px;
+    //   height: 37px;
+    //   top: -13px;
+    //   left: -14px;
+    //   background-image: url("../../img/Rectangle 4.svg");
+    //   z-index: 1;
 
-      @media (max-width: $tablet-width) {
-        display: none;
-      }
-    }
+    //   @media (max-width: $tablet-width) {
+    //     display: none;
+    //   }
+    // }
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 47px;
-      height: 47px;
-      top: 542px;
-      right: -18px;
-      background-image: url("../../img/Rectangle 3.svg");
-      z-index: 1;
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   width: 47px;
+    //   height: 47px;
+    //   top: 542px;
+    //   right: -18px;
+    //   background-image: url("../../img/Rectangle 3.svg");
+    //   z-index: 1;
 
-      @media (max-width: $tablet-width) {
-        display: none;
-      }
-    }
+    //   @media (max-width: $tablet-width) {
+    //     display: none;
+    //   }
+    // }
 
     @media (max-width: $tablet-width) {
       align-self: auto;
     }
   }
 
-  &--children {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 95px;
-      height: 95px;
-      top: -32px;
-      right: -36px;
-      background-image: url("../../img/Ellipse 2.svg");
-      z-index: 1;
+  // &--children {
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     width: 95px;
+  //     height: 95px;
+  //     top: -32px;
+  //     right: -36px;
+  //     background-image: url("../../img/Ellipse 2.svg");
+  //     z-index: 1;
 
-      @media (max-width: $tablet-width) {
-        width: 68px;
-        height: 68px;
-      }
-    }
-  }
+  //     @media (max-width: $tablet-width) {
+  //       width: 68px;
+  //       height: 68px;
+  //     }
+  //   }
+  // }
 }
 
 .content__item a {
@@ -141,6 +140,22 @@
   @media (max-width: $tablet-width) {
     width: 270px;
     height: 300px;
+  }
+}
+
+.content__item--road img::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 156px;
+  left: -60px;
+  background-image: url("../../img/Ellipse 1.svg");
+
+  @media (max-width: $tablet-width) {
+    width: 127px;
+    height: 127px;
+    top: 201px;
   }
 }
 
