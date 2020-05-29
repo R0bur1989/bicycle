@@ -15,14 +15,29 @@
     background-color: #131314;
     background-position: center 0;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/mainBike-desktop@2x.jpg");
+      background-size: auto 825px;
+    }
+
     @media (max-width: $tablet-width) {
       background-image: url("../../img/mainBike-tablet.jpg");
       height: 340px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/mainBike-tablet@2x.jpg");
+        background-size: auto 340px;
+      }
     }
 
     @media (max-width: $mobile-width) {
       background-image: url("../../img/mainBike-mobile.jpg");
       height: 390px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/mainBike-mobile@2x.jpg");
+        background-size: auto 390px;
+      }
     }
   }
 
