@@ -68,8 +68,6 @@
 
 .content__item img {
   position: relative;
-  margin: 0 0 20px 0;
-  border-radius: 10px;
 
   @media (max-width: $tablet-width) {
     width: 270px;
@@ -79,11 +77,13 @@
 
 .content__image {
   position: relative;
+  margin: 0 0 20px 0;
+  border-radius: 10px;
 
   @media (max-width: $mobile-width) {
     width: 270px;
     height: 300px;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
   }
 }
 
@@ -95,12 +95,18 @@
   top: 156px;
   left: -60px;
   background-image: url("../../img/Ellipse 1.svg");
+  background-size: contain;
 
   @media (max-width: $tablet-width) {
     width: 127px;
     height: 127px;
     top: auto;
     bottom: -28px;
+    left: -37px;
+  }
+
+  @media (max-width: $mobile-width) {
+    left: -24px;
   }
 }
 
@@ -143,10 +149,17 @@
   right: -36px;
   background-image: url("../../img/Ellipse 2.svg");
   z-index: 1;
+  background-size: contain;
 
   @media (max-width: $tablet-width) {
     width: 68px;
     height: 68px;
+    top: -20px;
+    right: -25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    right: -15px;
   }
 }
 

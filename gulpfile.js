@@ -11,6 +11,8 @@ var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
+var uglify = require('gulp-uglify');
+var pipeline = require('readable-stream').pipeline;
 var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
@@ -46,6 +48,14 @@ gulp.task("server", function () {
 gulp.task("refresh", function (done) {
   server.reload();
   done();
+});
+
+gulp.task('compress', function () {
+  return pipeline(
+        gulp.src('source/*.js'),
+        uglify(),
+        gulp.dest('build/js')
+  );
 });
 
 gulp.task("images", function() {

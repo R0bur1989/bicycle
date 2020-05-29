@@ -114,6 +114,7 @@
   background-image: url("../../img/icon-Play.svg");
   background-repeat: no-repeat;
   background-color: transparent;
+  background-size: contain;
 
   @media (max-width: $tablet-width) {
     width: 90.36px;
