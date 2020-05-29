@@ -19,7 +19,10 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
 </filter>
-</defs><symbol id="icon-logo" viewBox="0 0 68 21">
+</defs><symbol id="icon-cross" viewBox="0 0 41 52">
+<rect width="50" height="52" fill="white"></rect>
+<path d="M14 37.7213L36 15M36 37.7213L14 15" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round"></path>
+</symbol><symbol id="icon-logo" viewBox="0 0 68 21">
 <path d="M13.3636 0V20.0455H10.0705V5.82273L8.97273 7.20682L6.825 9.975L6.72954 10.0705L6.58636 9.975L4.43864 7.20682L3.34091 5.775V20.0455H0V0H3.34091L6.72954 4.29545L10.0705 0H13.3636Z" fill="#0AD9C6"></path>
 <path d="M8.30444 10.0704L8.20898 9.97498L8.30444 10.0704Z" fill="#0AD9C6"></path>
 <path d="M8.44787 9.97498L8.35241 10.0704H8.30469L8.44787 9.97498Z" fill="#0AD9C6"></path>
@@ -42,16 +45,19 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M28.6001 23.3999L41.6001 32.4999L28.6001 41.5999V23.3999Z" fill="#070707"></path>
 </symbol></svg>
   </div>
-  <header class="page-header page-header--nojs">
+  <header class="page-header">
     <button class="page-header__toggle"><svg width="30" height="30">
       <use xlink:href="#icon-Menu"></use>
     </svg></button>
-    <nav class="main-menu">
+    <nav class="main-menu main-menu--nojs">
+      <button class="main-menu__close-button"><svg width="41" height="52">
+        <use xlink:href="#icon-cross"></use>
+      </svg></button>
       <ul class="main-menu__list">
-        <li class="main-menu__item"><a href="" class="main-menu__link">О нас</a></li>
-        <li class="main-menu__item"><a href="" class="main-menu__link">Виды велосипедов</a></li>
-        <li class="main-menu__item"><a href="" class="main-menu__link">Видео про велосипеды</a></li>
-        <li class="main-menu__item"><a href="" class="main-menu__link">Контакты</a></li>
+        <li class="main-menu__item"><a href="#about" class="main-menu__link">О нас</a></li>
+        <li class="main-menu__item"><a href="#content" class="main-menu__link">Виды велосипедов</a></li>
+        <li class="main-menu__item"><a href="#video" class="main-menu__link">Видео про велосипеды</a></li>
+        <li class="main-menu__item"><a href="#contacts" class="main-menu__link">Контакты</a></li>
       </ul>
     </nav>
     <section class="intro">
@@ -65,18 +71,18 @@
         Наш магазин отбирает только самые лучшие велосипеды для продажи
       </p>
     </div>
-    <form action="" class="intro__form">
+    <form action="https://echo.htmlacademy.ru" method="GET" class="intro__form">
        <fieldset>
          <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
-         <input type="text" placeholder="Введите Ваше Имя">
-         <input type="tel" placeholder="Введите Ваш номер телефона">
+         <input type="text" name="user-name" placeholder="Введите Ваше Имя" required="">
+         <input type="tel" name="user-tel" placeholder="Введите Ваш номер телефона" required="">
          <button type="submit">Подобрать велосипед мечты</button>
        </fieldset>
     </form>
     </section>
   </header>
   <main>
-    <section class="about">
+    <section class="about" id="about">
       <h2>Несколько фактов о нас</h2>
       <ul class="about__list">
         <li class="about__item">
@@ -97,7 +103,7 @@
         </li>
       </ul>
     </section>
-    <section class="content">
+    <section class="content" id="content">
       <h2>Виды велосипедов</h2>
       <ul class="content__list">
         <li class="content__item content__item--road">
@@ -138,7 +144,7 @@
         </li>
       </ul>
     </section>
-    <section class="video">
+    <section class="video" id="video">
       <h2>Видео про велосипеды</h2>
       <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
       <div class="video__view">
@@ -154,7 +160,7 @@
   <div class="map">
     <h2 class="visually-hidden">Карта с нашим адресом</h2>
   </div>
-  <div class="contacts">
+  <div class="contacts" id="contacts">
     <p class="contacts__email"><svg width="26" height="20">
       <use xlink:href="#icon-mail"></use>
     </svg>
@@ -165,5 +171,6 @@
       <a href="tel:+749978468446"> +7 (499) -784-684-46</a></p>
   </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>

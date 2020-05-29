@@ -8,7 +8,10 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
 </filter>
-</defs><symbol id="icon-logo" viewBox="0 0 68 21">
+</defs><symbol id="icon-cross" viewBox="0 0 41 52">
+<rect width="50" height="52" fill="white"/>
+<path d="M14 37.7213L36 15M36 37.7213L14 15" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol id="icon-logo" viewBox="0 0 68 21">
 <path d="M13.3636 0V20.0455H10.0705V5.82273L8.97273 7.20682L6.825 9.975L6.72954 10.0705L6.58636 9.975L4.43864 7.20682L3.34091 5.775V20.0455H0V0H3.34091L6.72954 4.29545L10.0705 0H13.3636Z" fill="#0AD9C6"/>
 <path d="M8.30444 10.0704L8.20898 9.97498L8.30444 10.0704Z" fill="#0AD9C6"/>
 <path d="M8.44787 9.97498L8.35241 10.0704H8.30469L8.44787 9.97498Z" fill="#0AD9C6"/>

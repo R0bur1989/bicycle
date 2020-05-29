@@ -21,6 +21,19 @@
   }
 }
 
+.main-menu--nojs,
+.main-menu--opened {
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main-menu--closed {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .main-menu__list {
   @include list-reset();
   display: flex;
@@ -38,6 +51,22 @@
   }
 }
 
+.main-menu__close-button {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    padding: 0;
+    width: 41px;
+    height: 52px;
+    cursor: pointer;
+  }
+}
+
 .main-menu__link {
   font-weight: 300;
   line-height: 2;
@@ -47,6 +76,7 @@
   text-decoration: none;
 
   @media (max-width: $tablet-width) {
+    position: relative;
     display: block;
     width: 100%;
     padding: 17px 35px 17px 16px;
@@ -56,5 +86,19 @@
     line-height: 1.4;
     color: #48494d;
     opacity: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 18px;
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 25px;
+      height: 25px;
+      background-image: url("../../img/arrow.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
