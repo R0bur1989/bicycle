@@ -20,7 +20,7 @@ var del = require("del");
 
 gulp.task("compress", function () {
   return pipeline(
-        gulp.src("source/*.js"),
+        gulp.src("source/js/*.js"),
         uglify(),
         gulp.dest("build/js")
   );
@@ -95,7 +95,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
+    // "source/js/**",
     "source//*.ico"
     ], {
       base: "source"
@@ -107,5 +107,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "compress", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
