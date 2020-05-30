@@ -1,3 +1,4 @@
+(function() {
 "use strict";
 var mainMenu = document.querySelector(".main-menu");
 var headerToggle = document.querySelector(".page-header__toggle");
@@ -23,3 +24,4 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 });
+})();
