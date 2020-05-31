@@ -1,6 +1,6 @@
 .intro {
   @include wrapper();
-  width: 880px;
+  width: 885px;
   letter-spacing: -0.005em;
   display: flex;
   justify-content: space-between;
@@ -18,6 +18,8 @@
 
 .intro__info {
   width: 393px;
+  padding-left: 10px;
+  padding-top: 5px;
 
   @media (max-width: $tablet-width) {
     width: 525px;
@@ -33,7 +35,7 @@
 }
 
 .intro__logo {
-  margin-bottom: 31px;
+  margin-bottom: 26px;
 
   @media (max-width: $tablet-width) {
     position: absolute;
@@ -113,6 +115,10 @@
     line-height: 1.56;
     color: #000000;
   }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 20px 0;
+  }
 }
 
 .intro__form input {
@@ -125,6 +131,10 @@
   font-size: 15px;
   line-height: 1.6;
   margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 15px;
+  }
 }
 
 .intro__form input::placeholder {
@@ -141,9 +151,14 @@
   padding: 15px;
   width: 100%;
   text-align: center;
+  margin-top: 10px;
   background-color: $primary-color;
   border: none;
   border-radius: 6px;
   color: #000000;
   cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
